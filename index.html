@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+
+    <form method="POST" action="http://formspree.io/kuba.zaw90@gmail.com">
+        <label for="name">Imię:</label><br>
+            <input type="text" name="name" id="name"><br>
+        <label for="surname">Nazwisko:</label><br>
+            <input type="text" name="surname" id="surname"><br>
+        <label for="mail">Email:</label><br>
+            <input type="email" name="mail" id="mail"><br>
+        <label for="phone">Telefon:</label><br>
+            <input type="tel" name="phone" id="phone"><br>
+        <label for="city">Miasto:</label><br>
+            <select name="city" id="city">
+               <option value="krakow">Kraków</option>
+               <option value="warszawa">Warszawa</option>
+               <option value="gdansk">Gdańsk</option>
+            </select><br><br>
+        <label for="gender">Płeć:</label><br>
+            <input type="radio" name="gender" value="male" checked>Mężczyzna<br>
+            <input type="radio" name="gender" value="female">Kobieta<br><br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement"> Wyrażam zgodę na przetwarzanie moich danych osobowych</label><br><br>
+            <label for="msg">Wiadomość:</label><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+
+</body>
+
+</html>
